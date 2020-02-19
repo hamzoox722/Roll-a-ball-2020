@@ -12,7 +12,7 @@ public class BulletSource : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Fire", 2f, fireRate);
+        InvokeRepeating("Fire", 1f, fireRate);
     }
 
     // Update is called once per frame
