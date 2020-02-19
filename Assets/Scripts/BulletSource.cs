@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletSource : MonoBehaviour
 {
     public float fireRate = 2f;
+    public GameObject BulletPrefab;
     public float chanceToChangeDirections = 0.1f;
     public float speed = 1f;
     public float leftAndRightEdge = 10f;
@@ -45,4 +46,4 @@ public class BulletSource : MonoBehaviour
 
     }
 }
-}
+
