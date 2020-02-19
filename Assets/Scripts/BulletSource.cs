@@ -19,14 +19,14 @@ public class BulletSource : MonoBehaviour
     void Update()
     {
         Vector3 pos = transform.position;
-        pos.x += speed * Time.deltaTime;
+        pos.z += speed * Time.deltaTime;
         transform.position = pos;
 
-        if (pos.x < -leftAndRightEdge)
+        if (pos.z < -leftAndRightEdge)
         {
             speed = Mathf.Abs(speed);
         }
-        else if (pos.x > leftAndRightEdge)
+        else if (pos.z > leftAndRightEdge)
         {
             speed = -Mathf.Abs(speed);
         }
